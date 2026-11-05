@@ -15,13 +15,13 @@ export const NewsletterSection = () => {
       return;
     }
     setSubscribed(true);
-    addToast('Welcome to WanderWave VIP! Your 20% coupon code is ready.', 'success');
+    addToast('Welcome to UpBound VIP! Your 20% coupon code is ready.', 'success');
   };
 
   const handleCopy = () => {
-    navigator.clipboard?.writeText('WANDER20');
+    navigator.clipboard?.writeText('UPBOUND20');
     setCopied(true);
-    addToast('Coupon code "WANDER20" copied to clipboard!', 'success');
+    addToast('Coupon code "UPBOUND20" copied to clipboard!', 'success');
     setTimeout(() => setCopied(false), 3000);
   };
 
@@ -41,7 +41,7 @@ export const NewsletterSection = () => {
         </h2>
 
         <p className="text-slate-300 text-sm max-w-xl mx-auto mt-2 mb-8">
-          Join 250,000+ wanderers receiving unpublished airfare flash sales, private island upgrades, and seasonal escape discounts.
+          Join 250,000+ explorers receiving unpublished airfare flash sales, private island upgrades, and seasonal escape discounts.
         </p>
 
         {!subscribed ? (
@@ -73,7 +73,7 @@ export const NewsletterSection = () => {
             
             <div className="flex items-center justify-center gap-2">
               <span className="font-mono text-lg font-black bg-blue-600/50 px-4 py-1.5 rounded-xl border border-blue-400 tracking-widest text-amber-300">
-                WANDER20
+                UPBOUND20
               </span>
               <button
                 onClick={handleCopy}

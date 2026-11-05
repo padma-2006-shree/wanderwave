@@ -15,7 +15,7 @@ export const Footer = () => {
                 <Compass className="w-5 h-5" />
               </div>
               <span className="text-xl font-black text-white">
-                Wander<span className="text-blue-500">Wave</span>
+                Up<span className="text-blue-500">Bound</span>
               </span>
             </div>
             
@@ -78,7 +78,7 @@ export const Footer = () => {
         {/* Bottom Credits */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
           <div>
-            © 2026 WanderWave Global Booking Ltd. All rights reserved.
+            © 2026 UpBound Global Booking Ltd. All rights reserved.
           </div>
           <div className="flex items-center gap-1 text-[11px]">
             <span>Crafted with</span>

@@ -60,7 +60,7 @@ export const Navbar = () => {
               </div>
               <div>
                 <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
-                  Wander<span className="text-blue-600">Wave</span>
+                  Up<span className="text-blue-600">Bound</span>
                 </span>
                 <span className="hidden sm:block text-[10px] uppercase font-bold tracking-widest text-slate-400">
                   Luxury & Global Travel

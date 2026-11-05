@@ -559,7 +559,7 @@ export const reviews = [
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
     rating: 5,
     date: '2 weeks ago',
-    comment: 'WanderWave made our dream honeymoon completely effortless. The private driver in Ubud was fantastic, and receiving instant mobile e-tickets on checkout gave us complete peace of mind!'
+    comment: 'UpBound made our dream honeymoon completely effortless. The private driver in Ubud was fantastic, and receiving instant mobile e-tickets on checkout gave us complete peace of mind!'
   },
   {
     id: 'rev-2',
@@ -584,6 +584,7 @@ export const reviews = [
 ];
 
 export const promoCodes = {
+  'UPBOUND20': { discount: 0.20, type: 'percent', desc: '20% off whole trip' },
   'WANDER20': { discount: 0.20, type: 'percent', desc: '20% off whole trip' },
   'SUMMER25': { discount: 0.25, type: 'percent', desc: '25% summer discount' },
   'FIRST100': { discount: 100, type: 'flat', desc: '$100 off your first booking' },

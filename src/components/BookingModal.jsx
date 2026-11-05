@@ -58,8 +58,8 @@ export const BookingModal = () => {
   });
 
   // Promo code
-  const [promoInput, setPromoInput] = useState('WANDER20');
-  const [appliedPromo, setAppliedPromo] = useState(promoCodes['WANDER20']);
+  const [promoInput, setPromoInput] = useState('UPBOUND20');
+  const [appliedPromo, setAppliedPromo] = useState(promoCodes['UPBOUND20']);
   const [promoError, setPromoError] = useState('');
 
   // Payment form state
@@ -118,13 +118,13 @@ export const BookingModal = () => {
       setAppliedPromo(promoCodes[code]);
       setPromoError('');
     } else {
-      setPromoError('Invalid promo code. Try "WANDER20" or "SUMMER25"');
+      setPromoError('Invalid promo code. Try "UPBOUND20" or "SUMMER25"');
     }
   };
 
   // Complete Booking
   const handleCompleteBooking = () => {
-    const newBookingId = 'WV-' + Math.floor(100000 + Math.random() * 900000);
+    const newBookingId = 'UB-' + Math.floor(100000 + Math.random() * 900000);
     const bookingRecord = {
       id: newBookingId,
       bookingDate: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
@@ -451,7 +451,7 @@ export const BookingModal = () => {
                     type="text"
                     value={promoInput}
                     onChange={(e) => setPromoInput(e.target.value)}
-                    placeholder="Enter Coupon (try WANDER20, SUMMER25)"
+                    placeholder="Enter Coupon (try UPBOUND20, SUMMER25)"
                     className="w-full pl-9 pr-3 py-2 text-xs font-mono uppercase font-bold rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>

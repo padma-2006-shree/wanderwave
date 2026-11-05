@@ -39,7 +39,7 @@ export const TravelPerksBanner = () => {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider mb-2">
             <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-            <span>The WanderWave Distinction</span>
+            <span>The UpBound Distinction</span>
           </div>
           <h2 className="text-3xl font-black text-slate-900 tracking-tight">
             Travel With Unrivaled Peace of Mind

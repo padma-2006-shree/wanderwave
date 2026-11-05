@@ -77,7 +77,7 @@ export const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
-            Wander Further. <br />
+            Journey UpBound. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300">
               Live the Extraordinary.
             </span>

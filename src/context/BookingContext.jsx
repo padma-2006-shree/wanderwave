@@ -43,7 +43,7 @@ export const BookingProvider = ({ children }) => {
   // Wishlist / Saved items
   const [wishlist, setWishlist] = useState(() => {
     try {
-      const saved = localStorage.getItem('wanderwave_wishlist');
+      const saved = localStorage.getItem('upbound_wishlist') || localStorage.getItem('wanderwave_wishlist');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -52,7 +52,7 @@ export const BookingProvider = ({ children }) => {
 
   useEffect(() => {
     try {
-      localStorage.setItem('wanderwave_wishlist', JSON.stringify(wishlist));
+      localStorage.setItem('upbound_wishlist', JSON.stringify(wishlist));
     } catch (e) {
       console.error(e);
     }
@@ -76,12 +76,12 @@ export const BookingProvider = ({ children }) => {
   // Bookings state (persisted in localStorage)
   const [bookings, setBookings] = useState(() => {
     try {
-      const saved = localStorage.getItem('wanderwave_bookings');
+      const saved = localStorage.getItem('upbound_bookings') || localStorage.getItem('wanderwave_bookings');
       if (saved) return JSON.parse(saved);
       // default sample booking for immediate rich preview
       return [
         {
-          id: 'WV-98214',
+          id: 'UB-98214',
           bookingDate: new Date(Date.now() - 86400000 * 2).toLocaleDateString(),
           type: 'flights',
           status: 'Confirmed',
@@ -95,7 +95,7 @@ export const BookingProvider = ({ children }) => {
           },
           traveler: {
             name: 'Padma Shree',
-            email: 'traveler@wanderwave.com',
+            email: 'traveler@upbound.com',
             phone: '+1 (555) 019-2834',
             seats: '14A, 14B'
           },
@@ -116,7 +116,7 @@ export const BookingProvider = ({ children }) => {
 
   useEffect(() => {
     try {
-      localStorage.setItem('wanderwave_bookings', JSON.stringify(bookings));
+      localStorage.setItem('upbound_bookings', JSON.stringify(bookings));
     } catch (e) {
       console.error(e);
     }

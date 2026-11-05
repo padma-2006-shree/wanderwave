@@ -1,4 +1,4 @@
-# WanderWave — Luxury & Global Travel Booking Platform ✈️🌍
+# UpBound — Luxury & Global Travel Booking Platform ✈️🌍
 
 A modern, responsive, and full-featured travel booking web application built with **React**, **Vite**, **Tailwind CSS**, and **Lucide Icons**.
 
@@ -24,10 +24,10 @@ A modern, responsive, and full-featured travel booking web application built wit
 2. **Add-ons & Protection**: Comprehensive travel insurance, extra baggage allowance (+23kg), VIP lounge access, and carbon offset contributions.
 3. **Payment & Promo Codes**:
    - Interactive payment methods (Credit Card, PayPal, Apple/Google Pay).
-   - Real-time coupon validator (e.g. `WANDER20` for 20% off, `SUMMER25` for 25% off, `FIRST100` for $100 off).
+   - Real-time coupon validator (e.g. `UPBOUND20` for 20% off, `SUMMER25` for 25% off, `FIRST100` for $100 off).
    - Itemized bill breakdown with taxes, discounts, and final total.
 4. **Digital Boarding Pass / E-Ticket**:
-   - Unique reference code (e.g. `WV-849201`).
+   - Unique reference code (e.g. `UB-849201`).
    - Simulated QR code and boarding pass.
    - 1-click **Print / Save as PDF** capability.
 
